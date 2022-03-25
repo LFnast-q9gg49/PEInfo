@@ -107,6 +107,7 @@ int WINAPI WinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLin
     DD_INFO::InitDD(sae);
     DD_INFO::AnalyseExportTable();
     DD_INFO::AnalyseImportTable();
+    DD_INFO::AnalyseBaseRelocationTable();
 
     MessageBox(nullptr, TEXT("this is demo"), TEXT("this is demooooooo"), MB_OKCANCEL);
 

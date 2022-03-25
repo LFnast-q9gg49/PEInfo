@@ -12,7 +12,7 @@ int GetPosition(DWORD address){
     int pos;
     int num = int(FILE_HEADER::GetSectionNumber());
     for (pos = 0; pos < num ; pos++){
-        if (address >= SAE[pos][2] && address <= SAE[pos][3]){
+        if (address >= SAE[pos][2] && address < SAE[pos][3]){
             return pos;
         }
     }
@@ -23,36 +23,35 @@ int GetPosition(DWORD address){
 bool DD_INFO::AnalyseExportTable() {
     auto* ex_info = new ExInfo;
     auto* IED = new IED_info;
-    DWORD rva = DATA_DIRECTORY[0].VirtualAddress;
-    if (rva == 0 || DATA_DIRECTORY[0].Size == 0){
+    ex_info->R_AddressOfIED = DATA_DIRECTORY[0].VirtualAddress;
+    if (ex_info->R_AddressOfIED == 0 || DATA_DIRECTORY[0].Size == 0){
         cout << "this file doesn't have export table" << '\n';
         return false;
     }
     ex_info->id = GetPosition(DATA_DIRECTORY[0].VirtualAddress);
 
-    ex_info->R_AddressOfIED = rva;
     ex_info->F_AddressOfIED = SAE[ex_info->id][0] + ex_info->R_AddressOfIED - SAE[ex_info->id][2];
 
 
-    auto* ied = reinterpret_cast<PIMAGE_EXPORT_DIRECTORY>((DWORD *) FileLoader::ImageBase + ex_info->F_AddressOfIED / 4); // 0x11760
-    IED->Base = ied->Base; // 1
-    IED->R_NameAddr = ied->Name; // 12432
-    IED->R_AddressOfNames = ied->AddressOfNames; // 12410 函数名称RVA的RVA
+    auto* ied = reinterpret_cast<PIMAGE_EXPORT_DIRECTORY>((DWORD *) FileLoader::ImageBase + ex_info->F_AddressOfIED / 4);
+    IED->Base = ied->Base;
+    IED->R_NameAddr = ied->Name;
+    IED->R_AddressOfNames = ied->AddressOfNames;
     IED->R_AddressOfNameOrdinals = ied->AddressOfNameOrdinals;
-    IED->R_AddressOfFunctions = ied->AddressOfFunctions; // 12388
-    IED->NumberOfNames = ied->NumberOfNames;// 123cc
-    IED->NumberOfFunctions = ied->NumberOfFunctions; //17
+    IED->R_AddressOfFunctions = ied->AddressOfFunctions;
+    IED->NumberOfNames = ied->NumberOfNames;
+    IED->NumberOfFunctions = ied->NumberOfFunctions;
 
     // start with the address of names
-    IED->F_AddressOfNames = SAE[ex_info->id][0] + IED->R_AddressOfNames - SAE[ex_info->id][2]; // 117cc 函数名RVA的偏移值
-    auto* names = (DWORD *) FileLoader::ImageBase + IED->F_AddressOfNames / 4; // this is function name RVA
+    IED->F_AddressOfNames = SAE[ex_info->id][0] + IED->R_AddressOfNames - SAE[ex_info->id][2];
+    auto* names = (DWORD *) FileLoader::ImageBase + IED->F_AddressOfNames / 4;
 
-    IED->F_AddressOfNameOrdinals = SAE[ex_info->id][0] + IED->R_AddressOfNameOrdinals - SAE[ex_info->id][2]; // 11810
+    IED->F_AddressOfNameOrdinals = SAE[ex_info->id][0] + IED->R_AddressOfNameOrdinals - SAE[ex_info->id][2];
     auto* nameOrd = ((WORD *) FileLoader::ImageBase + IED->F_AddressOfNameOrdinals / 2);
 
     // 此处ordinal 为 02 ， +base = 03,对应1185e处为3号
-    IED->F_AddressOfFunctions = SAE[ex_info->id][0] + IED->R_AddressOfFunctions - SAE[ex_info->id][2]; // 11788
-    auto* func = (DWORD *) FileLoader::ImageBase + IED->F_AddressOfFunctions / 4; // 此处可找到地址,开始第三个地址即为真实地址
+    IED->F_AddressOfFunctions = SAE[ex_info->id][0] + IED->R_AddressOfFunctions - SAE[ex_info->id][2];
+    auto* func = (DWORD *) FileLoader::ImageBase + IED->F_AddressOfFunctions / 4;
     DWORD EntryPointOfFunction[IED->NumberOfNames];
     for (auto j = 0; j < IED->NumberOfFunctions; j++){
         EntryPointOfFunction[j] = *func;
@@ -62,7 +61,7 @@ bool DD_INFO::AnalyseExportTable() {
     for (auto i = 0; i < IED->NumberOfNames; i++){
         /************************* calculate the true offset of func_name *************************/
         IED->R_FuncName = DWORD(*names); // 1245e 函数名的RVA
-        IED->F_FuncName = SAE[ex_info->id][0] + IED->R_FuncName - SAE[ex_info->id][2]; // 1185e 函数名文件偏移值
+        IED->F_FuncName = SAE[ex_info->id][0] + IED->R_FuncName - SAE[ex_info->id][2];
 
         /************************* bind with Image Base *************************/
         auto trueName = (BYTE*) FileLoader::ImageBase + IED->F_FuncName;
@@ -85,16 +84,15 @@ bool DD_INFO::AnalyseExportTable() {
 
 bool DD_INFO::AnalyseImportTable() {
     auto* im_info = new ImInfo;
-    DWORD rva = DATA_DIRECTORY[1].VirtualAddress;
-    if (rva == 0 || DATA_DIRECTORY[1].Size == 0){
+    im_info->R_AddressOfIID = DATA_DIRECTORY[1].VirtualAddress;
+    if (im_info->R_AddressOfIID == 0 || DATA_DIRECTORY[1].Size == 0){
         cout << "this file doesn't have import table";
         return false;
     }
-    im_info->id = GetPosition(DATA_DIRECTORY[1].VirtualAddress);
+    im_info->id = GetPosition(im_info->R_AddressOfIID);
 
     /************************* where can i find Import descriptor *************************/
-    im_info->R_AddressOfIID = rva;
-    im_info->F_AddressOfIID = SAE[im_info->id][0] + rva - SAE[im_info->id][2];
+    im_info->F_AddressOfIID = SAE[im_info->id][0] + im_info->R_AddressOfIID - SAE[im_info->id][2];
     auto* IID = reinterpret_cast<IMAGE_IMPORT_DESCRIPTOR *>((DWORD *) FileLoader::ImageBase + im_info->F_AddressOfIID / 4);
 
     /************************* range Import descriptor *************************/
@@ -135,4 +133,34 @@ bool DD_INFO::AnalyseImportTable() {
         IID++;
     }
     return true;
+}
+
+bool DD_INFO::AnalyseResourceTable(){
+    auto* rs_info = new RsInfo;
+    rs_info->R_AddressOfIID = DATA_DIRECTORY[2].VirtualAddress;
+    if (rs_info->R_AddressOfIID == 0 || DATA_DIRECTORY[2].Size == 0){
+        cout << "this file doesn't have base relocation table";
+        return false;
+    }
+    rs_info->id = GetPosition(DATA_DIRECTORY[2].VirtualAddress);
+    rs_info->F_AddressOfIID = SAE[rs_info->id][0] + rs_info->R_AddressOfIID - SAE[rs_info->id][2];
+}
+
+bool DD_INFO::AnalyseBaseRelocationTable() {
+    auto* re_info = new ReInfo;
+    auto* BR_INFO = new BR_info;
+    re_info->R_AddressOfIID = DATA_DIRECTORY[5].VirtualAddress;
+    if (re_info->R_AddressOfIID == 0 || DATA_DIRECTORY[5].Size == 0){
+        cout << "this file doesn't have base relocation table";
+        return false;
+    }
+    re_info->id = GetPosition(DATA_DIRECTORY[5].VirtualAddress);
+    re_info->F_AddressOfIID = SAE[re_info->id][0] + re_info->R_AddressOfIID - SAE[re_info->id][2];
+    auto* br = reinterpret_cast<IMAGE_BASE_RELOCATION *>((DWORD *) FileLoader::ImageBase + re_info->F_AddressOfIID / 4);
+    BR_INFO->VirtualAddress = br->VirtualAddress;
+    BR_INFO->SizeOfBlock = br->SizeOfBlock;
+
+    /************************* Relocation list end with a WORD 0x00 *************************/
+    BR_INFO->numberOfRelocation = (BR_INFO->SizeOfBlock - 8) / 2;
+
 }

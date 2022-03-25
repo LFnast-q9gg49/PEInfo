@@ -39,6 +39,18 @@ struct ImInfo{
     DWORD F_AddressOfIID;
 };
 
+struct ReInfo{
+    int id;
+    DWORD R_AddressOfIID;
+    DWORD F_AddressOfIID;
+};
+
+struct RsInfo{
+    int id;
+    DWORD R_AddressOfIID;
+    DWORD F_AddressOfIID;
+};
+
 struct IED_info{
     DWORD F_NameAddr;
     DWORD R_NameAddr;
@@ -76,14 +88,19 @@ struct ITD64_info{
     ULONGLONG F_THUNK;
 };
 
-
+struct BR_info{
+    DWORD VirtualAddress;
+    DWORD SizeOfBlock;
+    DWORD numberOfRelocation;
+};
 
 class DD_INFO{
 public:
     static bool InitDD(vector<vector<DWORD>> sae);
     static bool AnalyseImportTable();
     static bool AnalyseExportTable();
-
+    static bool AnalyseResourceTable();
+    static bool AnalyseBaseRelocationTable();
 };
 
 #endif //PEINFO_DATADIRECTORY_H
