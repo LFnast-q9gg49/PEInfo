@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="PEInfo"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PEInfo">
+				<Option output="D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug/PEInfo.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug/Makefile&quot;  VERBOSE=1 PEInfo"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PEInfo/fast">
+				<Option output="D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug/PEInfo.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug/Makefile&quot;  VERBOSE=1 PEInfo/fast"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/CProgram/github.com/LFnast/Windows/PEInfo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/DOS_info.cpp">
+			<Option target="PEInfo"/>
+		</Unit>
+		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/DOS_info.h">
+			<Option target="PEInfo"/>
+		</Unit>
+		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/DataDirectory.cpp">
+			<Option target="PEInfo"/>
+		</Unit>
+		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/DataDirectory.h">
+			<Option target="PEInfo"/>
+		</Unit>
+		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/DataDirectory_Info.cpp">
+			<Option target="PEInfo"/>
+		</Unit>
+		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/DataDirectory_Info.h">
+			<Option target="PEInfo"/>
+		</Unit>
+		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/FileLoader.cpp">
+			<Option target="PEInfo"/>
+		</Unit>
+		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/FileLoader.h">
+			<Option target="PEInfo"/>
+		</Unit>
+		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/File_header.cpp">
+			<Option target="PEInfo"/>
+		</Unit>
+		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/File_header.h">
+			<Option target="PEInfo"/>
+		</Unit>
+		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/Format.cpp">
+			<Option target="PEInfo"/>
+		</Unit>
+		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/Format.h">
+			<Option target="PEInfo"/>
+		</Unit>
+		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/NT_info.cpp">
+			<Option target="PEInfo"/>
+		</Unit>
+		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/NT_info.h">
+			<Option target="PEInfo"/>
+		</Unit>
+		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/OptionalHeader.cpp">
+			<Option target="PEInfo"/>
+		</Unit>
+		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/OptionalHeader.h">
+			<Option target="PEInfo"/>
+		</Unit>
+		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/Section_info.cpp">
+			<Option target="PEInfo"/>
+		</Unit>
+		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/Section_info.h">
+			<Option target="PEInfo"/>
+		</Unit>
+		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/main.cpp">
+			<Option target="PEInfo"/>
+		</Unit>
+		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
