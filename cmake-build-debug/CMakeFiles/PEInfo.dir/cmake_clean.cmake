@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/PEInfo.dir/Analyze.cpp.obj"
   "CMakeFiles/PEInfo.dir/DOS_info.cpp.obj"
   "CMakeFiles/PEInfo.dir/DataDirectory.cpp.obj"
-  "CMakeFiles/PEInfo.dir/DataDirectory_Info.cpp.obj"
   "CMakeFiles/PEInfo.dir/FileLoader.cpp.obj"
   "CMakeFiles/PEInfo.dir/File_header.cpp.obj"
   "CMakeFiles/PEInfo.dir/Format.cpp.obj"

@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/Analyze.cpp">
+			<Option target="PEInfo"/>
+		</Unit>
+		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/Analyze.h">
+			<Option target="PEInfo"/>
+		</Unit>
 		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/DOS_info.cpp">
 			<Option target="PEInfo"/>
 		</Unit>
@@ -90,12 +96,6 @@
 			<Option target="PEInfo"/>
 		</Unit>
 		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/DataDirectory.h">
-			<Option target="PEInfo"/>
-		</Unit>
-		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/DataDirectory_Info.cpp">
-			<Option target="PEInfo"/>
-		</Unit>
-		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/DataDirectory_Info.h">
 			<Option target="PEInfo"/>
 		</Unit>
 		<Unit filename="D:/CProgram/github.com/LFnast/Windows/PEInfo/FileLoader.cpp">

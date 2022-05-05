@@ -128,6 +128,30 @@ PEInfo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PEInfo.dir\build.make CMakeFiles/PEInfo.dir/build
 .PHONY : PEInfo/fast
 
+Analyze.obj: Analyze.cpp.obj
+.PHONY : Analyze.obj
+
+# target to build an object file
+Analyze.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PEInfo.dir\build.make CMakeFiles/PEInfo.dir/Analyze.cpp.obj
+.PHONY : Analyze.cpp.obj
+
+Analyze.i: Analyze.cpp.i
+.PHONY : Analyze.i
+
+# target to preprocess a source file
+Analyze.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PEInfo.dir\build.make CMakeFiles/PEInfo.dir/Analyze.cpp.i
+.PHONY : Analyze.cpp.i
+
+Analyze.s: Analyze.cpp.s
+.PHONY : Analyze.s
+
+# target to generate assembly for a file
+Analyze.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PEInfo.dir\build.make CMakeFiles/PEInfo.dir/Analyze.cpp.s
+.PHONY : Analyze.cpp.s
+
 DOS_info.obj: DOS_info.cpp.obj
 .PHONY : DOS_info.obj
 
@@ -175,30 +199,6 @@ DataDirectory.s: DataDirectory.cpp.s
 DataDirectory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PEInfo.dir\build.make CMakeFiles/PEInfo.dir/DataDirectory.cpp.s
 .PHONY : DataDirectory.cpp.s
-
-DataDirectory_Info.obj: DataDirectory_Info.cpp.obj
-.PHONY : DataDirectory_Info.obj
-
-# target to build an object file
-DataDirectory_Info.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PEInfo.dir\build.make CMakeFiles/PEInfo.dir/DataDirectory_Info.cpp.obj
-.PHONY : DataDirectory_Info.cpp.obj
-
-DataDirectory_Info.i: DataDirectory_Info.cpp.i
-.PHONY : DataDirectory_Info.i
-
-# target to preprocess a source file
-DataDirectory_Info.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PEInfo.dir\build.make CMakeFiles/PEInfo.dir/DataDirectory_Info.cpp.i
-.PHONY : DataDirectory_Info.cpp.i
-
-DataDirectory_Info.s: DataDirectory_Info.cpp.s
-.PHONY : DataDirectory_Info.s
-
-# target to generate assembly for a file
-DataDirectory_Info.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PEInfo.dir\build.make CMakeFiles/PEInfo.dir/DataDirectory_Info.cpp.s
-.PHONY : DataDirectory_Info.cpp.s
 
 FileLoader.obj: FileLoader.cpp.obj
 .PHONY : FileLoader.obj
@@ -377,15 +377,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... PEInfo
+	@echo ... Analyze.obj
+	@echo ... Analyze.i
+	@echo ... Analyze.s
 	@echo ... DOS_info.obj
 	@echo ... DOS_info.i
 	@echo ... DOS_info.s
 	@echo ... DataDirectory.obj
 	@echo ... DataDirectory.i
 	@echo ... DataDirectory.s
-	@echo ... DataDirectory_Info.obj
-	@echo ... DataDirectory_Info.i
-	@echo ... DataDirectory_Info.s
 	@echo ... FileLoader.obj
 	@echo ... FileLoader.i
 	@echo ... FileLoader.s

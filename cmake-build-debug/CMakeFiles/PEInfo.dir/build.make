@@ -91,22 +91,9 @@ CMakeFiles/PEInfo.dir/NT_info.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PEInfo.dir/NT_info.cpp.s"
 	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CProgram\github.com\LFnast\Windows\PEInfo\NT_info.cpp -o CMakeFiles\PEInfo.dir\NT_info.cpp.s
 
-CMakeFiles/PEInfo.dir/DataDirectory_Info.cpp.obj: CMakeFiles/PEInfo.dir/flags.make
-CMakeFiles/PEInfo.dir/DataDirectory_Info.cpp.obj: ../DataDirectory_Info.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CProgram\github.com\LFnast\Windows\PEInfo\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PEInfo.dir/DataDirectory_Info.cpp.obj"
-	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PEInfo.dir\DataDirectory_Info.cpp.obj -c D:\CProgram\github.com\LFnast\Windows\PEInfo\DataDirectory_Info.cpp
-
-CMakeFiles/PEInfo.dir/DataDirectory_Info.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PEInfo.dir/DataDirectory_Info.cpp.i"
-	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CProgram\github.com\LFnast\Windows\PEInfo\DataDirectory_Info.cpp > CMakeFiles\PEInfo.dir\DataDirectory_Info.cpp.i
-
-CMakeFiles/PEInfo.dir/DataDirectory_Info.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PEInfo.dir/DataDirectory_Info.cpp.s"
-	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CProgram\github.com\LFnast\Windows\PEInfo\DataDirectory_Info.cpp -o CMakeFiles\PEInfo.dir\DataDirectory_Info.cpp.s
-
 CMakeFiles/PEInfo.dir/FileLoader.cpp.obj: CMakeFiles/PEInfo.dir/flags.make
 CMakeFiles/PEInfo.dir/FileLoader.cpp.obj: ../FileLoader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CProgram\github.com\LFnast\Windows\PEInfo\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PEInfo.dir/FileLoader.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CProgram\github.com\LFnast\Windows\PEInfo\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PEInfo.dir/FileLoader.cpp.obj"
 	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PEInfo.dir\FileLoader.cpp.obj -c D:\CProgram\github.com\LFnast\Windows\PEInfo\FileLoader.cpp
 
 CMakeFiles/PEInfo.dir/FileLoader.cpp.i: cmake_force
@@ -119,7 +106,7 @@ CMakeFiles/PEInfo.dir/FileLoader.cpp.s: cmake_force
 
 CMakeFiles/PEInfo.dir/DOS_info.cpp.obj: CMakeFiles/PEInfo.dir/flags.make
 CMakeFiles/PEInfo.dir/DOS_info.cpp.obj: ../DOS_info.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CProgram\github.com\LFnast\Windows\PEInfo\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PEInfo.dir/DOS_info.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CProgram\github.com\LFnast\Windows\PEInfo\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PEInfo.dir/DOS_info.cpp.obj"
 	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PEInfo.dir\DOS_info.cpp.obj -c D:\CProgram\github.com\LFnast\Windows\PEInfo\DOS_info.cpp
 
 CMakeFiles/PEInfo.dir/DOS_info.cpp.i: cmake_force
@@ -132,7 +119,7 @@ CMakeFiles/PEInfo.dir/DOS_info.cpp.s: cmake_force
 
 CMakeFiles/PEInfo.dir/File_header.cpp.obj: CMakeFiles/PEInfo.dir/flags.make
 CMakeFiles/PEInfo.dir/File_header.cpp.obj: ../File_header.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CProgram\github.com\LFnast\Windows\PEInfo\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PEInfo.dir/File_header.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CProgram\github.com\LFnast\Windows\PEInfo\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PEInfo.dir/File_header.cpp.obj"
 	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PEInfo.dir\File_header.cpp.obj -c D:\CProgram\github.com\LFnast\Windows\PEInfo\File_header.cpp
 
 CMakeFiles/PEInfo.dir/File_header.cpp.i: cmake_force
@@ -145,7 +132,7 @@ CMakeFiles/PEInfo.dir/File_header.cpp.s: cmake_force
 
 CMakeFiles/PEInfo.dir/Section_info.cpp.obj: CMakeFiles/PEInfo.dir/flags.make
 CMakeFiles/PEInfo.dir/Section_info.cpp.obj: ../Section_info.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CProgram\github.com\LFnast\Windows\PEInfo\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/PEInfo.dir/Section_info.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CProgram\github.com\LFnast\Windows\PEInfo\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PEInfo.dir/Section_info.cpp.obj"
 	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PEInfo.dir\Section_info.cpp.obj -c D:\CProgram\github.com\LFnast\Windows\PEInfo\Section_info.cpp
 
 CMakeFiles/PEInfo.dir/Section_info.cpp.i: cmake_force
@@ -158,7 +145,7 @@ CMakeFiles/PEInfo.dir/Section_info.cpp.s: cmake_force
 
 CMakeFiles/PEInfo.dir/Format.cpp.obj: CMakeFiles/PEInfo.dir/flags.make
 CMakeFiles/PEInfo.dir/Format.cpp.obj: ../Format.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CProgram\github.com\LFnast\Windows\PEInfo\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/PEInfo.dir/Format.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CProgram\github.com\LFnast\Windows\PEInfo\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/PEInfo.dir/Format.cpp.obj"
 	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PEInfo.dir\Format.cpp.obj -c D:\CProgram\github.com\LFnast\Windows\PEInfo\Format.cpp
 
 CMakeFiles/PEInfo.dir/Format.cpp.i: cmake_force
@@ -171,7 +158,7 @@ CMakeFiles/PEInfo.dir/Format.cpp.s: cmake_force
 
 CMakeFiles/PEInfo.dir/OptionalHeader.cpp.obj: CMakeFiles/PEInfo.dir/flags.make
 CMakeFiles/PEInfo.dir/OptionalHeader.cpp.obj: ../OptionalHeader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CProgram\github.com\LFnast\Windows\PEInfo\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/PEInfo.dir/OptionalHeader.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CProgram\github.com\LFnast\Windows\PEInfo\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/PEInfo.dir/OptionalHeader.cpp.obj"
 	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PEInfo.dir\OptionalHeader.cpp.obj -c D:\CProgram\github.com\LFnast\Windows\PEInfo\OptionalHeader.cpp
 
 CMakeFiles/PEInfo.dir/OptionalHeader.cpp.i: cmake_force
@@ -184,7 +171,7 @@ CMakeFiles/PEInfo.dir/OptionalHeader.cpp.s: cmake_force
 
 CMakeFiles/PEInfo.dir/DataDirectory.cpp.obj: CMakeFiles/PEInfo.dir/flags.make
 CMakeFiles/PEInfo.dir/DataDirectory.cpp.obj: ../DataDirectory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CProgram\github.com\LFnast\Windows\PEInfo\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/PEInfo.dir/DataDirectory.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CProgram\github.com\LFnast\Windows\PEInfo\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/PEInfo.dir/DataDirectory.cpp.obj"
 	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PEInfo.dir\DataDirectory.cpp.obj -c D:\CProgram\github.com\LFnast\Windows\PEInfo\DataDirectory.cpp
 
 CMakeFiles/PEInfo.dir/DataDirectory.cpp.i: cmake_force
@@ -195,25 +182,37 @@ CMakeFiles/PEInfo.dir/DataDirectory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PEInfo.dir/DataDirectory.cpp.s"
 	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CProgram\github.com\LFnast\Windows\PEInfo\DataDirectory.cpp -o CMakeFiles\PEInfo.dir\DataDirectory.cpp.s
 
+CMakeFiles/PEInfo.dir/Analyze.cpp.obj: CMakeFiles/PEInfo.dir/flags.make
+CMakeFiles/PEInfo.dir/Analyze.cpp.obj: ../Analyze.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CProgram\github.com\LFnast\Windows\PEInfo\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/PEInfo.dir/Analyze.cpp.obj"
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PEInfo.dir\Analyze.cpp.obj -c D:\CProgram\github.com\LFnast\Windows\PEInfo\Analyze.cpp
+
+CMakeFiles/PEInfo.dir/Analyze.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PEInfo.dir/Analyze.cpp.i"
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CProgram\github.com\LFnast\Windows\PEInfo\Analyze.cpp > CMakeFiles\PEInfo.dir\Analyze.cpp.i
+
+CMakeFiles/PEInfo.dir/Analyze.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PEInfo.dir/Analyze.cpp.s"
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CProgram\github.com\LFnast\Windows\PEInfo\Analyze.cpp -o CMakeFiles\PEInfo.dir\Analyze.cpp.s
+
 # Object files for target PEInfo
 PEInfo_OBJECTS = \
 "CMakeFiles/PEInfo.dir/main.cpp.obj" \
 "CMakeFiles/PEInfo.dir/NT_info.cpp.obj" \
-"CMakeFiles/PEInfo.dir/DataDirectory_Info.cpp.obj" \
 "CMakeFiles/PEInfo.dir/FileLoader.cpp.obj" \
 "CMakeFiles/PEInfo.dir/DOS_info.cpp.obj" \
 "CMakeFiles/PEInfo.dir/File_header.cpp.obj" \
 "CMakeFiles/PEInfo.dir/Section_info.cpp.obj" \
 "CMakeFiles/PEInfo.dir/Format.cpp.obj" \
 "CMakeFiles/PEInfo.dir/OptionalHeader.cpp.obj" \
-"CMakeFiles/PEInfo.dir/DataDirectory.cpp.obj"
+"CMakeFiles/PEInfo.dir/DataDirectory.cpp.obj" \
+"CMakeFiles/PEInfo.dir/Analyze.cpp.obj"
 
 # External object files for target PEInfo
 PEInfo_EXTERNAL_OBJECTS =
 
 PEInfo.exe: CMakeFiles/PEInfo.dir/main.cpp.obj
 PEInfo.exe: CMakeFiles/PEInfo.dir/NT_info.cpp.obj
-PEInfo.exe: CMakeFiles/PEInfo.dir/DataDirectory_Info.cpp.obj
 PEInfo.exe: CMakeFiles/PEInfo.dir/FileLoader.cpp.obj
 PEInfo.exe: CMakeFiles/PEInfo.dir/DOS_info.cpp.obj
 PEInfo.exe: CMakeFiles/PEInfo.dir/File_header.cpp.obj
@@ -221,6 +220,7 @@ PEInfo.exe: CMakeFiles/PEInfo.dir/Section_info.cpp.obj
 PEInfo.exe: CMakeFiles/PEInfo.dir/Format.cpp.obj
 PEInfo.exe: CMakeFiles/PEInfo.dir/OptionalHeader.cpp.obj
 PEInfo.exe: CMakeFiles/PEInfo.dir/DataDirectory.cpp.obj
+PEInfo.exe: CMakeFiles/PEInfo.dir/Analyze.cpp.obj
 PEInfo.exe: CMakeFiles/PEInfo.dir/build.make
 PEInfo.exe: CMakeFiles/PEInfo.dir/linklibs.rsp
 PEInfo.exe: CMakeFiles/PEInfo.dir/objects1.rsp
