@@ -9,10 +9,16 @@
 #include "Section_info.h"
 #include "DataDirectory.h"
 #include "Format.h"
+#include "windowsx.h"
+#include "strsafe.h"
+
+LRESULT CALLBACK SectionTableProc(HWND hwnd, UINT message, WPARAM wparam, LPARAM lparam);
+LRESULT CALLBACK ExportTableProc(HWND hwnd, UINT message, WPARAM wparam, LPARAM lparam);
+LRESULT CALLBACK ImportTableProc(HWND hwnd, UINT message, WPARAM wparam, LPARAM lparam);
 
 class Analyze {
 public:
-    static bool Ana();
+    static bool Ana(HWND hwnd, char* dst);
 };
 
 

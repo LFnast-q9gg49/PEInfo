@@ -49,7 +49,6 @@ bool DD_INFO::AnalyseExportTable() {
     IED->F_AddressOfNameOrdinals = SAE[ex_info->id][0] + IED->R_AddressOfNameOrdinals - SAE[ex_info->id][2];
     auto* nameOrd = ((WORD *) FileLoader::ImageBase + IED->F_AddressOfNameOrdinals / 2);
 
-    // 此处ordinal 为 02 ， +base = 03,对应1185e处为3号
     IED->F_AddressOfFunctions = SAE[ex_info->id][0] + IED->R_AddressOfFunctions - SAE[ex_info->id][2];
     auto* func = (DWORD *) FileLoader::ImageBase + IED->F_AddressOfFunctions / 4;
     DWORD EntryPointOfFunction[IED->NumberOfNames];
@@ -60,10 +59,10 @@ bool DD_INFO::AnalyseExportTable() {
 
     for (auto i = 0; i < IED->NumberOfNames; i++){
         /************************* calculate the true offset of func_name *************************/
-        IED->R_FuncName = DWORD(*names); // 1245e 函数名的RVA
+        IED->R_FuncName = DWORD(*names);
         IED->F_FuncName = SAE[ex_info->id][0] + IED->R_FuncName - SAE[ex_info->id][2];
 
-        /************************* bind with Image Base *************************/
+        /************************* bind with ImageBase *************************/
         auto trueName = (BYTE*) FileLoader::ImageBase + IED->F_FuncName;
 
         while(true){
@@ -95,7 +94,7 @@ bool DD_INFO::AnalyseImportTable() {
     im_info->F_AddressOfIID = SAE[im_info->id][0] + im_info->R_AddressOfIID - SAE[im_info->id][2];
     auto* IID = reinterpret_cast<IMAGE_IMPORT_DESCRIPTOR *>((DWORD *) FileLoader::ImageBase + im_info->F_AddressOfIID / 4);
 
-    /************************* range Import descriptor *************************/
+    /************************* range Import Descriptor *************************/
     while (IID){
         /************************* five zero in a row means the end *************************/
         if (!(IID->OriginalFirstThunk | IID->TimeDateStamp | IID->ForwarderChain | IID->Name | IID->FirstThunk)){

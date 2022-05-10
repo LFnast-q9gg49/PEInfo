@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+D:/CProgram/github.com/LFnast/Windows/PEInfo/Analyze.cpp
+Analyze.h
+D:/CProgram/github.com/LFnast/Windows/PEInfo/Analyze.h
+
 D:/CProgram/github.com/LFnast/Windows/PEInfo/Analyze.h
 FileLoader.h
 D:/CProgram/github.com/LFnast/Windows/PEInfo/FileLoader.h
@@ -23,6 +27,10 @@ DataDirectory.h
 D:/CProgram/github.com/LFnast/Windows/PEInfo/DataDirectory.h
 Format.h
 D:/CProgram/github.com/LFnast/Windows/PEInfo/Format.h
+windowsx.h
+D:/CProgram/github.com/LFnast/Windows/PEInfo/windowsx.h
+strsafe.h
+D:/CProgram/github.com/LFnast/Windows/PEInfo/strsafe.h
 
 D:/CProgram/github.com/LFnast/Windows/PEInfo/DOS_info.h
 wtypes.h
@@ -89,12 +97,10 @@ bits/stdc++.h
 -
 windows.h
 D:/CProgram/github.com/LFnast/Windows/PEInfo/windows.h
-windowsx.h
-D:/CProgram/github.com/LFnast/Windows/PEInfo/windowsx.h
-strsafe.h
-D:/CProgram/github.com/LFnast/Windows/PEInfo/strsafe.h
 commdlg.h
 D:/CProgram/github.com/LFnast/Windows/PEInfo/commdlg.h
+tchar.h
+D:/CProgram/github.com/LFnast/Windows/PEInfo/tchar.h
 Analyze.h
 D:/CProgram/github.com/LFnast/Windows/PEInfo/Analyze.h
 

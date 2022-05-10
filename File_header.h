@@ -8,7 +8,7 @@ const int BIT64 = false;
 
 class MachineInfo{
 public:
-    string Name;
+    const CHAR *Name;
     bool bit_info;
 };
 

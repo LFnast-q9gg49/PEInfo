@@ -96,7 +96,8 @@ bool SECTION_INFO::CalculateStartAndEnd(DWORD sectionAlignment, vector<vector<DW
         ret.push_back(ptr->PointerToRawData);
         ret.push_back(ptr->PointerToRawData + ptr->SizeOfRawData);
         ret.push_back(ptr->VirtualAddress);
-        temp = ptr->VirtualAddress + (ptr->SizeOfRawData / sectionAlignment) * sectionAlignment ; // based on virtual alignment in optional header;
+        // based on virtual alignment in optional header;
+        temp = ptr->VirtualAddress + (ptr->SizeOfRawData / sectionAlignment) * sectionAlignment ;
         if(ptr->SizeOfRawData % sectionAlignment != 0){
             temp += sectionAlignment;
         }
